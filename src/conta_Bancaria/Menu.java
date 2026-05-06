@@ -3,26 +3,16 @@ package conta_Bancaria;
 
 import java.util.Scanner;
 
-import conta_Bancaria.model.Conta;
 import conta_Bancaria.model.ContaCorrente;
 import conta_Bancaria.model.ContaPoupanca;
 import conta_Bancaria.util.Cores;
 
 public class Menu {
-
-
+	  
+	private static final Scanner leia = new Scanner(System.in);
+	
 	public static void main(String[] args) {
 		
-		 Conta c1 = new Conta(1, 123, 1, "Jackeline pessoa", 20000.0f);
-
-	        c1.visualizar();
-
-	        c1.setSaldo(35000.0f);
-		    c1.setTitular("lucia martis");
-			c1.visualizar();
-
-	        c1.sacar(12000.0f);
-			c1.visualizar();
 			
 			ContaCorrente cc1 = new ContaCorrente(2, 123, 1, "José da Silva", 0.0f, 1000.0f);
 			cc1.visualizar();
@@ -40,7 +30,7 @@ public class Menu {
 			cp1.visualizar();
 			
 			
-		Scanner leia = new Scanner(System.in);
+		
 		int opcao;
 
 		while (true) {
